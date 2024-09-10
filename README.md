@@ -1,51 +1,54 @@
 # Space App
+![Static Badge](https://img.shields.io/badge/status-completed-green?style=for-the-badge)
 
-## Introdução
-O **Space App** é uma aplicação web que exibe uma galeria de imagens do espaço. Os usuários podem navegar por imagens de alta qualidade, marcar suas favoritas e visualizá-las em detalhe. A aplicação é construída com ferramentas modernas, proporcionando uma experiência fluida e interativa para amantes de astronomia.
+## Introduction
+**Space App** is a web application that displays a gallery of space images. Users can browse through high-quality images, mark their favorites, and view them in detail. The application is built with modern tools, providing a fluid and interactive experience for astronomy lovers.
+
+## Live Application
+[Space App Demonstration](https://organo-v3.vercel.app)
 
 ## Índice
-- [Instalação](#instalação)
-- [Uso](#uso)
-- [Funcionalidades](#funcionalidades)
-- [Tecnologias](#tecnologias)
-- [Contribuidores](#contribuidores)
-- [Licença](#licença)
+- [Installation](#installation)
+- [Use](#use)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Contributors](#contributors)
 
-## Instalação
+## Installation
 
-### Pré-requisitos
+### Prerequisites
 - [Node.js](https://nodejs.org/)
-- Um editor de texto, como o VSCode
+- A text editor, such as VSCode
 
-### Passos para executar
-1. Clone o repositório:
+### Steps to execute
+1. Clone the repository:
    ```bash
    git clone https://github.com/victorhubarb/space-app.git
    cd space-app
    ```
-2. Instale as dependências:
+2. Install dependencies:
    ```bash
    npm install
    ```
-3. Inicie o servidor de desenvolvimento:
+3. Start the development server:
    ```bash
    npm start
    ```
 
-## Uso
-Após iniciar o servidor, a aplicação estará disponível localmente. Você pode navegar pela galeria de imagens, favoritar suas preferidas e visualizar detalhes ampliados de cada imagem.
+## Use
+After starting the server, the application will be available locally. You can browse the image gallery, favorite your favorites, and view enlarged details of each image.
 
-## Funcionalidades
-- **Catálogo de Imagens**: Uma galeria interativa com imagens do espaço.
-- **Favoritos**: Marque suas imagens favoritas para fácil acesso.
-- **Modal de Zoom**: Veja as imagens em detalhes com um modal responsivo.
-- **Busca e Filtros**: Encontre imagens específicas e filtre por categorias.
+## Features
+- **Image Catalog**: An interactive gallery with images of space.
+- **Favorites**: Bookmark your favorite images for easy access.
+- **Zoom Modal**: See images in detail with a responsive modal.
+- **Search & Filters**: Find specific images and filter by categories.
 
-## Tecnologias
-- **Vite**: Utilizado para otimizar o ambiente de desenvolvimento.
-- **Styled Components**: Para estilização dinâmica e eficiente.
-- **JavaScript**: Linguagem principal do projeto.
+## Technologies
+- **Vite**: Used to optimize the development environment.
+- **Styled Components**: For dynamic and efficient styling.
+- **JavaScript**: Main language of the project.
 
-## Contribuidores
+## Contributors
 - [Victor Barbosa](https://github.com/victorhubarb)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
