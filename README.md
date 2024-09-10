@@ -1,13 +1,13 @@
 # Space App <a name="readme-top"></a>
 ![Static Badge](https://img.shields.io/badge/status-completed-green?style=for-the-badge)
 
-## Introduction
+## Description
 **Space App** is a web application that displays a gallery of space images. Users can browse through high-quality images, mark their favorites, and view them in detail. The application is built with modern tools, providing a fluid and interactive experience for astronomy lovers.
 
 ## Live Application
 [Space App Demonstration](https://space-app-ten-mocha.vercel.app)
 
-## Índice
+## Table of Contents
 - [Installation](#installation)
 - [Use](#use)
 - [Features](#features)
@@ -20,7 +20,7 @@
 - [Node.js](https://nodejs.org/)
 - A text editor, such as VSCode
 
-### Steps to execute
+### Steps to run
 1. Clone the repository:
    ```bash
    git clone https://github.com/victorhubarb/space-app.git
@@ -35,7 +35,7 @@
    npm start
    ```
 
-## Use
+## Usage
 After starting the server, the application will be available locally. You can browse the image gallery, favorite your favorites, and view enlarged details of each image.
 
 ## Features
