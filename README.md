@@ -9,7 +9,7 @@
 
 ## Table of Contents
 - [Installation](#installation)
-- [Use](#use)
+- [Usage](#usage)
 - [Features](#features)
 - [Technologies](#technologies)
 - [Contributors](#contributors)
