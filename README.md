@@ -1,7 +1,7 @@
 # Space App <a name="readme-top"></a>
 ![Static Badge](https://img.shields.io/badge/status-completed-green?style=for-the-badge)
 
-## Description
+## Introduction
 **Space App** is a web application that displays a gallery of space images. Users can browse through high-quality images, mark their favorites, and view them in detail. The application is built with modern tools, providing a fluid and interactive experience for astronomy lovers.
 
 ## Live Application
@@ -47,7 +47,7 @@ After starting the server, the application will be available locally. You can br
 ## Technologies
 - **Vite**: Used to optimize the development environment.
 - **Styled Components**: For dynamic and efficient styling.
-- **JavaScript**: Main language of the project.
+- **JavaScript**: The main language of the project.
 
 ## Contributors
 - [Victor Barbosa](https://github.com/victorhubarb)
