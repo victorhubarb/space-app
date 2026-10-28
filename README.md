@@ -1,54 +1,54 @@
-# Space App <a name="readme-top"></a>
-![Static Badge](https://img.shields.io/badge/status-completed-green?style=for-the-badge)
+# Space App
 
-## Introduction
-**Space App** is a web application that displays a gallery of space images. Users can browse through high-quality images, mark their favorites, and view them in detail. The application is built with modern tools, providing a fluid and interactive experience for astronomy lovers.
+A gallery of space photos built with React. You can search by title, filter by tag, mark favorites, and open any photo in a zoom modal.
 
-## Live Application
-[Space App Demonstration](https://space-app-ten-mocha.vercel.app)
+**Live demo:** [space-app-ten-mocha.vercel.app](https://space-app-ten-mocha.vercel.app)
 
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Technologies](#technologies)
-- [Contributors](#contributors)
+## What's inside
 
-## Installation
+- **Search and tag filters together.** `App` holds the search text and the selected tag in state, and a `useEffect` recomputes the visible photos from the source list whenever either one changes.
+- **Favorites.** Toggling the heart updates the gallery, and also the open modal when the same photo is showing.
+- **Zoom modal.** Built on the native `<dialog>` element, with a form that closes it. The expanded view reuses the same `Imagem` component as the gallery.
+- **Styled Components.** Each component owns its styles, and a global style file loads the custom font. The page background and the banner are styled with gradients and an image.
+- **Static data.** Photos, tags and the "popular" list come from JSON files in `src/`, so there is no backend.
 
-### Prerequisites
-- [Node.js](https://nodejs.org/)
-- A text editor, such as VSCode
+The interface is in Portuguese.
 
-### Steps to run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/victorhubarb/space-app.git
-   cd space-app
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm start
-   ```
+## Stack
 
-## Usage
-After starting the server, the application will be available locally. You can browse the image gallery, favorite your favorites, and view enlarged details of each image.
+React 18, Vite 5, Styled Components 6, deployed on Vercel.
 
-## Features
-- **Image Catalog**: An interactive gallery with images of space.
-- **Favorites**: Bookmark your favorite images for easy access.
-- **Zoom Modal**: See images in detail with a responsive modal.
-- **Search & Filters**: Find specific images and filter by categories.
+## Run it locally
 
-## Technologies
-- **Vite**: Used to optimize the development environment.
-- **Styled Components**: For dynamic and efficient styling.
-- **JavaScript**: The main language of the project.
+Requires Node.js 18 or newer.
 
-## Contributors
-- [Victor Barbosa](https://github.com/victorhubarb)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```bash
+git clone https://github.com/victorhubarb/space-app.git
+cd space-app
+npm install
+npm run dev
+```
+
+Vite prints the local address, `http://localhost:5173` by default.
+
+## Project structure
+
+```
+src/
+├── App.jsx            State, filtering and layout
+├── componentes/       Cabecalho, BarraLateral, Banner, Galeria (Tags, Imagem, Populares),
+│                      ModalZoom, CampoTexto, Rodape, EstilosGlobais
+├── fotos.json         The photo list
+└── main.jsx
+```
+
+## Known gaps
+
+- Favorites are kept in the photo list that `App` builds, and applying a search or tag filter rebuilds that list from the original data, so favorites reset when a filter changes. They also do not survive a reload. Saving them by id in `localStorage` is the fix.
+- The layout uses fixed widths (a 1440 px container, 460 px cards), so it is made for desktop and is not responsive.
+- The "Ver mais" button under Populares does nothing yet.
+- No tests.
+
+---
+
+Victor Hugo Barbosa · [GitHub](https://github.com/victorhubarb) · [LinkedIn](https://www.linkedin.com/in/victorhbarbosa/)
